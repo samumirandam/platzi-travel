@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
 module.exports = {
   content: ['./public/index.html', './src/**/*.{html,js}'],
   theme: {
     colors: {
+      ...colors,
       primary: '#CC2D4A',
       secondary: '#8FA206',
       tertiary: '#61AEC9',
@@ -11,6 +13,7 @@ module.exports = {
       primary: '#CC2D4A',
       secondary: '#8FA206',
       tertiary: '#61AEC9',
+      white: '#fff',
     },
     fontFamily: {
       montserrat: ['Montserrat', 'sans-serif'],
@@ -35,5 +38,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 };
