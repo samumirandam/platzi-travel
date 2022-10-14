@@ -13,7 +13,7 @@
     />
     <title>Platzi Travel</title>
   </head>
-  <body>
+  <body class="font-montserrat">
     <nav></nav>
     <div id="tab-bar"></div>
     <section class="w-full h-screen">
@@ -24,11 +24,11 @@
           >
             <input
               type="search"
-              class="outline-none p-3 rounded-full shadow-md"
+              class="w-4/12 outline-none p-3 rounded-full shadow-md transition-all ease-in-out duration-300 focus-within:shadow-md focus:ring-2 focus:w-11/12"
               placeholder="San Francisco"
             />
             <button
-              class="w-36 rounded-full text-xl text-primary font-semibold p-4 bg-white shadow-md"
+              class="w-48 rounded-full text-xl text-primary font-semibold p-4 bg-white shadow-md transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
             >
               Explorar
             </button>
@@ -65,7 +65,9 @@
             </div>
           </div>
           <div class="Card">
-            <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+            <div
+              class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"
+            ></div>
             <div class="w-full h-2/5 rounded-b-lg bg-white px-4 py-2">
               <p class="text-tertiary text-bold text-xl">Switzerland</p>
               <p class="text-tertiary">Lorem ipsum dolor sit</p>
@@ -115,7 +117,25 @@
           </div>
         </div>
       </div>
-      <div id="featured"></div>
+      <div id="featured" class="px-2 h-full w-full">
+        <p class="text-3xl text-primary font-semibold pb-6 mt-6">Destacados</p>
+        <div
+          class="w-full h-full flex flex-col space-y-4 items-center justify-center"
+        >
+          <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+            <p class="CardTitle">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">
+              2 habitaciones, baño y cocina
+            </p>
+          </div>
+          <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+            <p class="CardTitle">Chicago</p>
+            <p class="text-sm pl-8 text-black mr-24">
+              2 habitaciones, baño y cocina
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <footer></footer>
   </body>
